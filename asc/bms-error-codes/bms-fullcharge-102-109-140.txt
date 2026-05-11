@@ -1,0 +1,14 @@
+Captured at 100 % SOC with the dashboard cycling through codes 102
+(Total voltage too high), 109 (Battery over voltage), and 140 (System
+fault level).
+
+F108 payload `10 00 04 00 00 00 00 01` throughout. byte 7 = 0x01 sets
+only bit 0 (= 124, the always-on Clock fault baseline); 140 is NOT
+asserted in byte 7 in this snapshot, consistent with the dashboard
+*cycling* through codes so not all listed codes are simultaneously
+active in the bitmap.
+
+**bytes 0 = 0x10 and byte 2 = 0x04 are nonzero for the first time in
+any capture**, so F108 carries fault info beyond byte 7. The
+bit-to-code mapping for those bytes is not yet established. See the
+F108F3 section in NOTES.txt.

@@ -1,0 +1,2 @@
+F/N/R lever walked R -> N -> F (10 s each), no pedal. Pinned down
+FF21CA byte 7 low nibble = direction.

@@ -1,0 +1,3 @@
+Wake-up with charger plug inserted in the tractor's charge port BUT no
+AC power to the charger. Useful for isolating "charger detected" flags
+vs. "actively charging".

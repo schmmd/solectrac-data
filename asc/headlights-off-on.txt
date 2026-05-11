@@ -1,0 +1,15 @@
+2026-05-09. Headlights toggled on at ~t=5 s.
+
+Part of a side-by-side set documenting attempts to find body-control
+signals on this bus (alongside fwd-on-and-off.asc, pto-off-on.asc,
+pto-on-off.asc).
+
+Outcome: **none of the 4WD / PTO / headlight switch states appear on
+this bus as a discrete flag.** Every byte was checked across all 62
+broadcast IDs and no byte transitions cleanly with any of those
+toggles. What headlights and PTO *do* produce is a clean step in F100F3
+pack current (the auxiliary load shifts the BMS-reported pack draw);
+4WD selection produces no visible signature at all. This is consistent
+with those switches being either hard-wired discrete I/O or carried on
+a second CAN segment we don't have a tap on. See "Open questions" in
+NOTES.txt for the two-bus hypothesis.

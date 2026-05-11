@@ -1,0 +1,6 @@
+2026-05-09. Operator confirmed the dashboard was cycling through codes
+124, 140, 142, 143, 144, 146 (each held on screen ~1 s) for the
+duration of this capture.
+
+Paired with idle-no-bms.asc (same key state, no charger, no faults);
+the diff between the two localized the fault encoding to F108 byte 7.

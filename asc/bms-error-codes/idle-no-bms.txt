@@ -1,0 +1,3 @@
+2026-05-09. Same key state as bms-124-140-142-143-144-146.asc but no
+charger and no faults; the clean baseline for the matched-mode diff
+that localized F108 byte 7 as the BMS active-fault bitmap.

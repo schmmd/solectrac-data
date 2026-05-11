@@ -1,0 +1,2 @@
+Range selector walked 1 -> 2 -> 3 (10 s each) in Forward. Pinned down
+FF21CA byte 7 high nibble = range.

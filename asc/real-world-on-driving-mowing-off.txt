@@ -1,0 +1,26 @@
+2026-05-10. First capture in the corpus taken under genuine traction
+load rather than neutral pedal tests.
+
+570 s wall-clock; operator drove forward, reversed, mowed, and shifted.
+The bus actually went silent mid-capture (key-off?) from t=134.6 s to
+t=554.3 s — all PGNs (BMS F100F3, FF21CA motor, FF2112 dash) stopped
+and resumed together — so the useful drive data lives in the first
+~135 s plus a short ~17 A idle tail at the end.
+
+The sustained-load segment t=90..135 s (mean 77 A, peak 153 A, V sag
+0.6 V, peak 12.6 kW at ~2500 RPM) is the highest-amperage
+cross-validation point in the corpus, well above the amp-*.asc set's
+58 A.
+
+Operator stayed in **Range 2** for the entire session (R1 and R3 never
+engaged); FF21CA byte 0 (throttle) reached 0xCC = 204 in forward (vs.
+0x96 = 150 in reverse) — see the FF21CA byte 0 section for the rescale.
+FF21CA byte 7 = 0x10 was observed for the first time (Range 2 + N
+lever), completing the F/N/R × Range cross-product.
+
+**No new CAN IDs and no byte-level signature appeared when the mower
+was engaged**, reinforcing the discrete-wiring / hydraulic-bus
+hypothesis for PTO.
+
+F107 byte 5 also showed a new ignition transient value 0xA5
+(t=0.56..0.96 s), extending the existing transient list.

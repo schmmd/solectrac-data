@@ -1,0 +1,1 @@
+Create captures of the tractor in neutral at each 10% interval SOC.
